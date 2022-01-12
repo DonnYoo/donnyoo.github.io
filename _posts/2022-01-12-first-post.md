@@ -1,4 +1,5 @@
 ---
+layout: single
 title: "Hello World!"
 excerpt: "이것은 처음이다"
 categories:
