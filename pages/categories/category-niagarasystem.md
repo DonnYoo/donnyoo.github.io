@@ -1,5 +1,5 @@
 ---
-title: "NiagaraSystem"
+title: "NiagaraSystem AudioVisualizer"
 layout: archive
 permalink: categories/audiovisualizer
 author_profile: true
