@@ -15,3 +15,7 @@ last_modified_at: 2022-01-12
 ---
 
 # Hello World!
+
+![giftest](/Images/NS_Floating&Spinning2.gif){: .align-center}
+
+![pngtest](/Images/test.png){: .align-right}{: width="20%, height="20%"}
