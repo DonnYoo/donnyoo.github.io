@@ -1,5 +1,5 @@
 ---
-title: "FX"
+title: "NiagaraSystem"
 layout: archive
 permalink: categories/audiovisualizer
 author_profile: true
