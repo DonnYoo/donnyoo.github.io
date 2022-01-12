@@ -1,7 +1,7 @@
 ---
 title: "FX"
 layout: archive
-permalink: categories/fx
+permalink: categories/audiovisualizer
 author_profile: true
 sidebar_main: true
 ---

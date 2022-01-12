@@ -3,7 +3,7 @@ layout: single
 title: "Hello World!"
 excerpt: "이것은 처음이다"
 categories:
- - fx
+ - audiovisualizer
 tags:
   - [blog, jekyll, Github, Git]
 
