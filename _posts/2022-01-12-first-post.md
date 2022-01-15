@@ -3,9 +3,9 @@ layout: single
 title: "Floating and Spinning"
 excerpt: "이것은 처음이다"
 categories:
- - AudioVisualizer
+ - "Effect"
 tags:
-  - [blog, jekyll, Github, Git]
+  - [NiagaraSystem, UnrealEngine, Effect]
 
 toc: true
 toc_sticky: true
