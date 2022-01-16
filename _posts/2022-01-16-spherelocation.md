@@ -2,9 +2,10 @@
 layout: single
 title: "SphereLocation"
 categories:
-- Effect
+- "Effect"
 tags:
-  - [Effect, NiagaraSystem, Location]
+  - [Effect, Location, NiagaraSystem]
+
 
 toc: true
 toc_sticky: true
