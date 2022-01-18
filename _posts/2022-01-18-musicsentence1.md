@@ -14,4 +14,4 @@ date: 2022-01-18
 last_modified_at: 2022-01-18
 ---
 
-![AlbumCover](/Images/Lemaitre-Rocket%20Girl.png){: .align-center}
+![AlbumCover](/Images/Sentence/Lemaitre-Rocket%20Girl.png){: .align-center}{: width="50%", height="50%"}

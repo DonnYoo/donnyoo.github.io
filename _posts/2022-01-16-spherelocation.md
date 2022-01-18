@@ -14,8 +14,8 @@ date: 2022-01-16
 last_modified_at: 2022-01-16
 ---
 
-![Spinning](/Images/SpinningLine.gif){: .align-center}  
+![Spinning](/Images/Niagara System/SpinningLine.gif){: .align-center}  
 
-![V-Moving](/Images/V-MovingRing.gif){: .align-center}  
+![V-Moving](/Images/Niagara System/V-MovingRing.gif){: .align-center}  
 
-![U-Moving](/Images/U-MovingRing.gif){: .align-center}
+![U-Moving](/Images/Niagara System/U-MovingRing.gif){: .align-center}

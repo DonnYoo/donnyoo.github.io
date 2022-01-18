@@ -19,6 +19,6 @@ Chladni Pattern
   
 cos(n pi x/L) * cos(m pi y/L) - cos(m pi x/L) * cos(n pi y/L)    
 
-![org](/Images/Chladni%20Pattern_org.gif){: .align-center}Original  
+![org](/Images/Houdini/Chladni%20Pattern_org.gif){: .align-center}Original  
 
-![houdini](/Images/Chladni%20Pattern.gif){: .align-center}Houdini  
+![houdini](/Images/Houdini/Chladni%20Pattern.gif){: .align-center}Houdini  
