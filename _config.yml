@@ -103,7 +103,7 @@ analytics:
 # Site Author
 author:
   name             : "Donn"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "https://avatars.githubusercontent.com/u/83320747?s=400&u=c5a4fa378b78779a81cc289cc5d012d9da6e3294&v=4.png"
   bio              : "Great things happen<br>when i ask WHY NOT"
   location         : "Somewhere"
   email            : "donovanccc4@gmail.com"
