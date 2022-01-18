@@ -36,6 +36,33 @@
                    {% endif %}
                 {% endfor %}
             </ul>
+        <span class="nav__sub-title">Sentence</span>
+            <ul>
+                {% for category in site.categories %}
+                   {% if category[0] == "Music" %}
+                     <li><a href="/categories/musicsentence" class="">Music ({{category[1].size}})</a></li>
+                   {% endif %}
+                {% endfor %}
+            </ul>
+             <ul>
+                 {% for category in site.categories %}
+                    {% if category[0] == "Book" %}
+                      <li><a href="/categories/booksentence" class="">Book ({{category[1].size}})</a></li>
+                    {% endif %}
+                 {% endfor %}
+             </ul>
+             <ul>
+                 {% for category in site.categories %}
+                    {% if category[0] == "Movie" %}
+                      <li><a href="/categories/moviesentence" class="">Movie ({{category[1].size}})</a></li>
+                    {% endif %}
+                 {% endfor %}
+             </ul>
+
+
+
+
+
 
       </li>
   </ul>
