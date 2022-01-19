@@ -5,7 +5,7 @@ categories:
 - Book
 
 tags:
-- [Job, 8:7]
+- ["8:7", Job]
 
 toc: true
 toc_sticky: true
@@ -15,4 +15,4 @@ last_modified_at: 2022-01-19
 ---
   
   
-![Job](/Images/Sentence/Job87.png){: .align-center}
+![Job](/Images/Sentence/Job87.png){: .align-center}{: width="70%", height="70%"}
