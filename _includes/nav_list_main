@@ -36,6 +36,13 @@
         <span class="nav__sub-title">Languages</span>
             <ul>
                 {% for category in site.categories %}
+                   {% if category[0] == "UECPP" %}
+                     <li><a href="/categories/uecppstudy" class="">UnrealEngineC++ ({{category[1].size}})</a></li>
+                   {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
                    {% if category[0] == "CPP" %}
                      <li><a href="/categories/cppstudy" class="">C++ ({{category[1].size}})</a></li>
                    {% endif %}
