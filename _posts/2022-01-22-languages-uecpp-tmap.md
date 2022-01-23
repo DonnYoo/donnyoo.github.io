@@ -17,10 +17,10 @@ last_modified_at: 2022-01-22
 TMap 기본함수
 ---  
   
-**기본형**
+### 기본형
 - `TMap<int32, FString> map`  
 
-**추가**  
+### 추가
 - `Add()`: Add(key,value)로 TMap에 추가한다
 - `Emplace()`: Add()와 마찬가지로 key와 value를 추가한다  
 - `Append()`: 두개의 TMap을 합쳐주며 합쳐진 TMap의 elements들은 사라진다  
@@ -85,7 +85,7 @@ UPROPERTY(EditAnywhere, Category = Map)
 TMap<int32, FString> map;
 ~~~  
   
-**iteration**  
+### iteration  
 - for(type& v : map){}
 ~~~c++
 for (auto& Elem : map)
@@ -114,7 +114,7 @@ for (auto it = map.CreateConstIterator(); it; ++it)
 // *it.Value()  Same as *it->Value
 ~~~  
   
-**Queries**  
+### Queries  
 - `Num()`: 얼마큼의 elements가 있는지 알려준다
 ~~~c++
 int32 count = map.Num();
