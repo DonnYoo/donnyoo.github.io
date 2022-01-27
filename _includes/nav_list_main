@@ -52,7 +52,7 @@
             <ul>
                 {% for category in site.categories %}
                    {% if category[0] == "UECPP" %}
-                     <li><a href="/categories/uecppstudy" class="">UnrealEngineC++ ({{category[1].size}})</a></li>
+                     <li><a href="/categories/uecppstudy" class="">UnrealEngine C++ ({{category[1].size}})</a></li>
                    {% endif %}
                 {% endfor %}
             </ul>
@@ -60,6 +60,13 @@
                 {% for category in site.categories %}
                    {% if category[0] == "CPP" %}
                      <li><a href="/categories/cppstudy" class="">C++ ({{category[1].size}})</a></li>
+                   {% endif %}
+                {% endfor %}
+            </ul>
+            <ul>
+                {% for category in site.categories %}
+                   {% if category[0] == "ProgrammersCPP" %}
+                     <li><a href="/categories/programmerscpp" class="">Programmers C++ ({{category[1].size}})</a></li>
                    {% endif %}
                 {% endfor %}
             </ul>
