@@ -25,6 +25,21 @@
                      {% endif %}
                  {% endfor %}
             </ul>
+        <span class="nav__sub-title">Material & Texture</span>
+                    <ul>
+                        {% for category in site.categories %}
+                           {% if category[0] == "Materials" %}
+                             <li><a href="/categories/materials" class="">Materials ({{category[1].size}})</a></li>
+                           {% endif %}
+                        {% endfor %}
+                    </ul>
+                    <ul>
+                        {% for category in site.categories %}
+                           {% if category[0] == "Textures" %}
+                             <li><a href="/categories/textures" class="">Textures ({{category[1].size}})</a></li>
+                           {% endif %}
+                        {% endfor %}
+                    </ul>
         <span class="nav__sub-title">Houdini</span>
             <ul>
                 {% for category in site.categories %}
