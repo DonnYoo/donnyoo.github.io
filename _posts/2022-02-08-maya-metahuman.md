@@ -34,7 +34,7 @@ Quixel에서 Maya로 MetaHuman Export하기
   
 ---  
   
-Import 후 Texture가 생성되지 않을때
+Import 후 Texture가 생성되지 않을때.
 ---  
   
   * 상단부 Windows->Settings/Preferences->Preferences
