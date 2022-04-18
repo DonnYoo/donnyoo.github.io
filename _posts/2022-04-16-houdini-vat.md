@@ -182,3 +182,39 @@ last_modified_at: 2022-04-16
   ![VAT_Cloth_Tutorial.gif](/Images/Houdini/VAT/VAT_Cloth_Tutorial.gif)
 
   *[result]*
+
+# RBD [Rigid-Body Dynamics]
+
+## Export
+
+- VAT 설정 변경
+
+  ![Untitled](/Images/Houdini/VAT//Untitled%2034.png)
+
+  ![Untitled](/Images/Houdini/VAT//Untitled%2035.png)
+
+- 설정 후 Warning이 뜨는걸 볼 수 있다.
+
+  ![Untitled](/Images/Houdini/VAT//Untitled%2036.png)
+
+  [”pivot” and “orient” 를 input geometry에서 찾을 수 없다.]
+
+- RBD Bullet Solver Node를 생성 후 가지고 있는 attrs를 살펴보면 “pivot” 과 “orient”가 없는걸 확인할 수 있다.
+
+  ![Untitled](/Images/Houdini/VAT//Untitled%2037.png)
+
+
+- “pivot” 과 “orient”를 추가하기 위해선 RBD Bullet Solver Node의 output옵션에서 Transfer Attributes에 “pivot”, “orient”를 추가해준다. Transfer to Geometry체크박스 체크.
+
+  ![Untitled](/Images/Houdini/VAT//Untitled%2038.png)
+
+  ![Untitled](/Images/Houdini/VAT//Untitled%2039.png)
+
+
+## Import
+
+- Export 옵션은 SoftBody 와 같다.
+
+  ![Untitled](/Images/Houdini/VAT//Untitled%2024.png)
+
+  ![Untitled](/Images/Houdini/VAT//Untitled%2025.png)
