@@ -370,4 +370,91 @@ last_modified_at: 2022-04-23
 
 # 3.Vellum_Fur
 
+## Result
+
+---
+
+![Vellum_Fur4.gif](/Images/Houdini/TearingMeat/Vellum_Fur4.gif)
+
+---
+
+## Start
+
+---
+
+- Vellum_fur에 Object Merge 생성 후 Vellum_meat OUT을 Object에 넣어준다.
+
+  그리고 HairGeneration 생성 한다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2075.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2076.png)
+
+  안쪽은 필요한 부분이 없기때문에 없애주는 작업을 한다.
+
+- HairGeneration 생성 후 Hair가 Core 안쪽까지 생성된걸 볼 수 있다. 이것은 Fracture 후 안쪽 surface도 생겨서 그부분까지 Hair가 생성이 된 것이다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2077.png)
+
+- Vellum_meat에서 Fraction전에 Null 생성을 하여 이것을 Vellum_fur에 새로운 Object_Merge를 생성해서 넣어준다. 그리고 HairGeneration도 다시 연결해준다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2078.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2079.png)
+
+  결과로 외부만 Hair가 생긴것을 볼 수 있다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2080.png)
+
+- For_Each_Primitive 생성 후 Group Create 생성.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2081.png)
+
+  0을가진 모든 points가 선택이 되도록 설정 변경 한다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2082.png)
+
+- Null OUT을 생성하고 DOP Network와 Vellum Hair를 생성한다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2083.png)
+
+  DOP Network안에는 Gravity 를 생성해준다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2084.png)
+
+  그리고  obj Network에 보면 hair_vellum이 생성된걸 볼 수 있는데 안에 Nodes를 복사해서 Vellum_fur에 붙여넣기 한 후 hair_vellum은 지워준다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2085.png)
+
+  *[result]*
+
+  ![Vellum_Fur1.gif](/Images/Houdini/TearingMeat/Vellum_Fur1.gif)
+
+- Hair들을 뜯어지는 부분에만 붙여준다.
+
+  이를위해 처음에 생성했던 object_merge를  Vellum Hair 3번째 input에 연결하고 그밑에 Vellum Attatch to Geometry생성해 설정변경을 한다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2086.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2087.png)
+
+  [result]
+
+  ![Vellum_Fur2.gif](/Images/Houdini/TearingMeat/Vellum_Fur2.gif)
+
+- Vellum_meat and Vellum_strings 다 같이 플레이를 한 경우 fur가 meat외부에 붙어있지 않고 안으로 들어가는걸 볼 수 있다.
+
+  ![Vellum_Fur3.gif](/Images/Houdini/TearingMeat/Vellum_Fur3.gif)
+
+- 위부분 해결은 Vellum_strings의 DOP Network안 3개의 Nodes를 복사해 Vellum_fur의 DOP Network안에 붙여 넣기 해줌으로 해결된다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2088.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2089.png)
+
+  *[result]*
+
+  ![Vellum_Fur4.gif](/Images/Houdini/TearingMeat/Vellum_Fur4.gif)
+
+
 # 4.Vellum_Blood
