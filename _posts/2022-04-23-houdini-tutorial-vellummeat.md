@@ -20,7 +20,6 @@ last_modified_at: 2022-04-23
 
 ## [Result]
 
----
 
 ![Vellum_Meat5.gif](/Images/Houdini/TearingMeat/Vellum_Meat5.gif)
 
@@ -28,7 +27,6 @@ last_modified_at: 2022-04-23
 
 ## Start
 
----
 
 - Sphere 생성
 
@@ -252,7 +250,6 @@ last_modified_at: 2022-04-23
 
 ## [Result]
 
----
 
 ![Vellum_Strings3.gif](/Images/Houdini/TearingMeat/Vellum_Strings3.gif)
 
@@ -260,7 +257,6 @@ last_modified_at: 2022-04-23
 
 ## Start
 
----
 
 - 먼저 Vellum_strings 를 만들기위해 필요한 부분만 가져오기위한 작업을 한다.
 
@@ -372,7 +368,6 @@ last_modified_at: 2022-04-23
 
 ## Result
 
----
 
 ![Vellum_Fur4.gif](/Images/Houdini/TearingMeat/Vellum_Fur4.gif)
 
@@ -380,7 +375,6 @@ last_modified_at: 2022-04-23
 
 ## Start
 
----
 
 - Vellum_fur에 Object Merge 생성 후 Vellum_meat OUT을 Object에 넣어준다.
 
@@ -457,4 +451,180 @@ last_modified_at: 2022-04-23
   ![Vellum_Fur4.gif](/Images/Houdini/TearingMeat/Vellum_Fur4.gif)
 
 
-# 4.Vellum_Blood
+# 4.Vellum_Blood  
+
+## Result
+
+
+![Vellum_Blood9.gif](/Images/Houdini/TearingMeat/Vellum_Blood9.gif)
+
+---
+
+## Start
+
+
+- Object Merge 생성.
+
+  Outside는 필요없기때문에 Delete로 제거해준다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2090.png)
+
+  PointWrangle 추가하고 script 작성.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2091.png)
+
+  Delete추가로 필요없는부분을 없애줌으로 original position으로부터 분리될때 나타나도록 셋팅한다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2092.png)
+
+  *[result]*
+
+  ![Vellum_Blood1.gif](/Images/Houdini/TearingMeat/Vellum_Blood1.gif)
+
+- 위 같은 결과로 진행시 많은 양의 Blood가 나와 수정할 필요가 있다.
+
+  Vellum_meat에서 OUT_CON을 가져와 Object Merge를 생성한다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2093.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2094.png)
+
+  이유는 stress라는 attriburte를 사용해야하는 이를 가지고 있기 때문이다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2095.png)
+
+  이후 Attribute Transfer, Attribute Promote를 생성하고 stress를 가져온다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2096.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2097.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2098.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%2099.png)
+
+  그리고 Delete를 생성하여 나타날부분을 조절해준다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20100.png)
+
+  *[result]*
+
+  ![Vellum_Blood2.gif](/Images/Houdini/TearingMeat/Vellum_Blood2.gif)
+
+- 위 같이 실행시 Stretch가 많이된 상황에서도 particle이 살아있는걸 볼 수 있다.
+
+  이부분을 없애주기 위해 작업을 한다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20101.png)
+
+  Attribute Create를 Attribute Promote와 delete3의 사이에 생성하고  age라는 이름과 value에 1을 준다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20102.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20103.png)
+
+  그리고 solver생성을 하고 안으로 들어가 PointWrangle과 Attribute Transfer를 생성하고 셋팅해준다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20104.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20105.png)
+
+  포인트에 맞춰 age가 조절되도록 설정.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20106.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20107.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20108.png)
+
+  *[result]*
+
+  ![Vellum_Blood3.gif](/Images/Houdini/TearingMeat/Vellum_Blood3.gif)
+
+  ![Vellum_Blood4.gif](/Images/Houdini/TearingMeat/Vellum_Blood4.gif)
+
+- 일정 ageinc 이상시 없어지도록 셋팅.
+
+  Delete를 추가하고 Expression에서 ageinc가 12보다 클경우 없어지도록 설정한다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20109.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20110.png)
+
+  *[result]*
+
+  ![Vellum_Blood5.gif](/Images/Houdini/TearingMeat/Vellum_Blood5.gif)
+
+- Fluid 생성.
+
+  먼저 DOP Network생성한다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20111.png)
+
+  그리고 Emit Particle Fluid 생성시 물어보기에 obj Network에 Grid를 하나 생성해둔다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20112.png)
+
+  Emit Particle Fluid 생성
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20113.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20114.png)
+
+  방금 만든 DOP Network안에 생성된 Nodes를 볼 수 있다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20115.png)
+
+  생성 후 만들어진 Box가 너무가 크기 조절을 해준다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20116.png)
+
+- Gravity 추가.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20117.png)
+
+  *[result]*
+
+  ![Vellum_Blood6.gif](/Images/Houdini/TearingMeat/Vellum_Blood6.gif)
+
+- Ground 추가 & Strings의 Collision이 필요해 Vellum_strings의 DOP Network안에 필요한 Nodes를 복사해 Vellum_blood의 DOP Network에 붙여넣기 한다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20118.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20119.png)
+
+  *[result]*
+
+  ![Vellum_Blood7.gif](/Images/Houdini/TearingMeat/Vellum_Blood7.gif)
+
+- 외부 표면에서 쉽게 Fluid가 나오는걸 볼 수 있다. 그리고 very l**iquor한걸 볼 수 있다.**
+
+  이를 수정하기 위해 몇가지 설정을 바꿔준다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20120.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20121.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20122.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20123.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20124.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20125.png)
+
+  liquor가 외부 표면에서 먼저 나온것은 이게 문제일것이다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20126.png)
+
+  FLIP DOP source 에서 Shall Thckness을 조절하여 크기를 줄여준다.
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20127.png)
+
+  ![Untitled](/Images/Houdini/TearingMeat/Untitled%20128.png)
+
+  *[result]*
+
+  ![Vellum_Blood8.gif](/Images/Houdini/TearingMeat/Vellum_Blood8.gif)
+
+  ![Vellum_Blood9.gif](/Images/Houdini/TearingMeat/Vellum_Blood9.gif)
