@@ -2,7 +2,8 @@
 layout: single
 title: "SphereLocation"
 categories:
-- "NiagaraSystem"
+- NiagaraSystem
+
 tags:
   - [Effect, Location, NiagaraSystem]
 

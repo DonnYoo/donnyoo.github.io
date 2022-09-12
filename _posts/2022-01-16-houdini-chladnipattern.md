@@ -2,7 +2,8 @@
 layout: single
 title: "Chladni Pattern"
 categories:
-- "Algorithm"
+- Algorithm
+
 tags:
   - [Houdini, ChladniPattern]
 

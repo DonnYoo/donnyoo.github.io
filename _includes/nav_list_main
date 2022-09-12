@@ -19,7 +19,7 @@
             </ul>
             <ul>
                  {% for category in site.categories %}
-                     {% if category[0] == "Material & Texture" %}
+                     {% if category[0] == "MaterialTexture" %}
                          <li><a href="/categories/materialtexture" class="">Material & Texture ({{category[1].size}})</a></li>
                      {% endif %}
                  {% endfor %}

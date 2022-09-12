@@ -3,7 +3,8 @@ layout: single
 title: "Floating and Spinning"
 
 categories:
- - "NiagaraSystem"
+ - NiagaraSystem
+
 tags:
   - [NiagaraSystem, UnrealEngine, Effect]
 
