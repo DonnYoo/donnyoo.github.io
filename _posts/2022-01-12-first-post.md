@@ -1,9 +1,9 @@
 ---
 layout: single
 title: "Floating and Spinning"
-excerpt: "이것은 처음이다"
+
 categories:
- - "Effect"
+ - "NiagaraSystem"
 tags:
   - [NiagaraSystem, UnrealEngine, Effect]
 

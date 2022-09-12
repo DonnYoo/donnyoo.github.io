@@ -1,10 +1,10 @@
 ---
-title: "Materials"
+title: "Material & Texture"
 layout: archive
-permalink: categories/materials
+permalink: categories/materialtexture
 author_profile: true
 sidebar_main: true
 ---
 
-{% assign posts = site.categories.Materials %}
+{% assign posts = site.categories.Material & Texture %}
 {% for post in posts %} {% include archive-single2.html type=page.entries_layout %} {% endfor %}

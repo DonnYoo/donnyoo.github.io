@@ -4,7 +4,7 @@ layout: single
 title: "Dissolve"
 
 categories:
-- "Materials"
+- "Material & Texture"
 
 tags:
 - [UnrealEngine, Materials, Dissolve]
